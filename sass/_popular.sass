@@ -1,0 +1,46 @@
+.popular
+
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+  &__card
+    width: 47.5%
+    margin-top: 40px
+
+    &__info
+      padding: 24px
+
+    &__title
+      @include secondary-font
+      font-size: 24px
+      line-height: 40px
+      color: $primary
+      margin-bottom: 8px
+
+    &__text
+      @include secondary-slim
+      font-size: 18px
+      line-height: 32px
+      color: $secondary
+      margin-bottom: 8px
+
+    &__img1
+      background: url(../images/popular-card-1.png)
+
+    &__img2
+      background: url(../images/popular-card-2.png)
+
+    &__img3
+      background: url(../images/popular-card-3.png)
+
+    &__img4
+      background: url(../images/popular-card-4.png)
+
+    &__img
+      min-height: 520px
+      background-repeat: no-repeat
+      background-position-x: 50%
+      background-position-y: 50%
+      background-color: $background-card

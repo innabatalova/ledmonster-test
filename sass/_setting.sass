@@ -38,11 +38,45 @@ ul
   border-radius: 8px
 
   &:hover,&:active,&:focus
-    border: 2px solid #00CCCC
+    border: 2px solid $link-color
+
+.primary-title
+  @include primary-font
+  font-size: 40px
+  line-height: 56px
+  color: $name-color
+
+.all-link
+  position: relative
+  @include secondary-font
+  font-size: 18px
+  line-height: 32px
+  color: $primary
+  right: 20px
+
+  &:after
+    content: ""
+    position: absolute
+    background: url(../images/all-link-arrow.svg)
+    top: 8px
+    right: -20px
+    width: 11px
+    height: 16px
+
+  &:hover,&:active,&:focus
+    color: $link-color
+
+    &:after
+      background: url(../images/all-link-arrow-link.svg)
 
 .card-reverse
   display: flex
   flex-direction: row-reverse !important
+
+.title-wrapper
+  display: flex
+  align-items: center
+  justify-content: space-between
 
 @media screen and ( max-width: 1440px )
   .primary-button

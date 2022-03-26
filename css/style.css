@@ -67,9 +67,53 @@ ul {
   border: 2px solid #00CCCC;
 }
 
+.primary-title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 56px;
+  color: #222222;
+}
+
+.all-link {
+  position: relative;
+  font-family: 'Lato 600';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: #333333;
+  right: 20px;
+}
+
+.all-link:after {
+  content: "";
+  position: absolute;
+  background: url(../images/all-link-arrow.svg);
+  top: 8px;
+  right: -20px;
+  width: 11px;
+  height: 16px;
+}
+
+.all-link:hover, .all-link:active, .all-link:focus {
+  color: #00CCCC;
+}
+
+.all-link:hover:after, .all-link:active:after, .all-link:focus:after {
+  background: url(../images/all-link-arrow-link.svg);
+}
+
 .card-reverse {
   display: flex;
   flex-direction: row-reverse !important;
+}
+
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 1440px) {
@@ -148,6 +192,7 @@ ul {
   min-height: 763px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-x: 50%;
 }
 
 @media screen and (max-width: 1441px) {
@@ -228,5 +273,64 @@ ul {
   .presentation__card__img {
     min-height: 300px;
   }
+}
+
+.popular__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.popular__card {
+  width: 47.5%;
+  margin-top: 40px;
+}
+
+.popular__card__info {
+  padding: 24px;
+}
+
+.popular__card__title {
+  font-family: 'Lato 600';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 40px;
+  color: #333333;
+  margin-bottom: 8px;
+}
+
+.popular__card__text {
+  font-family: 'Lato 400';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #666666;
+  margin-bottom: 8px;
+}
+
+.popular__card__img1 {
+  background: url(../images/popular-card-1.png);
+}
+
+.popular__card__img2 {
+  background: url(../images/popular-card-2.png);
+}
+
+.popular__card__img3 {
+  background: url(../images/popular-card-3.png);
+}
+
+.popular__card__img4 {
+  background: url(../images/popular-card-4.png);
+}
+
+.popular__card__img {
+  min-height: 520px;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-color: #EDEDED;
 }
 /*# sourceMappingURL=style.css.map */
