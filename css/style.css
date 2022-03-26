@@ -75,9 +75,8 @@ ul {
 .presentation-banner {
   background: url(../images/presentation-banner.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 869px;
-  margin-bottom: 80px;
+  background-size: contain;
+  height: 50vw;
 }
 
 .presentation__card {
