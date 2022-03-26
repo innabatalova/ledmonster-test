@@ -56,7 +56,8 @@ ul {
   color: #333333;
   font-size: 18px;
   line-height: 32px;
-  padding: 8px 32px;
+  padding: 8px 27px;
+  width: 170px;
   background: #F9F8F9;
   border: 2px solid #00CCCC;
   border-radius: 8px;
@@ -64,6 +65,11 @@ ul {
 
 .primary-button:hover, .primary-button:active, .primary-button:focus {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.card-reverse {
+  display: flex;
+  flex-direction: row-reverse !important;
 }
 
 .presentation-banner {
@@ -81,8 +87,12 @@ ul {
 }
 
 .presentation__card__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 50%;
-  padding: 220px 80px;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 .presentation__card__title {
@@ -104,10 +114,25 @@ ul {
   margin-bottom: 32px;
 }
 
+.presentation__card__text br {
+  margin-bottom: 24px;
+}
+
+.presentation__card__img1 {
+  background: url(../images/presentation-card-1.jpg);
+}
+
+.presentation__card__img2 {
+  background: url(../images/presentation-card-2.jpg);
+}
+
+.presentation__card__img3 {
+  background: url(../images/presentation-card-3.jpg);
+}
+
 .presentation__card__img {
   width: 50%;
   min-height: 763px;
-  background: url(../images/presentation-card-1.png);
   background-repeat: no-repeat;
   background-size: cover;
 }

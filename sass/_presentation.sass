@@ -13,8 +13,12 @@
     background-color: $background
 
     &__info
+      display: flex
+      flex-direction: column
+      justify-content: center
       width: 50%
-      padding: 220px 80px
+      padding-left: 80px
+      padding-right: 80px
 
     &__title
       @include primary-font
@@ -29,9 +33,20 @@
       color: $secondary
       margin-bottom: 32px
 
+    &__text br
+      margin-bottom: 24px
+
+    &__img1
+      background: url(../images/presentation-card-1.jpg)
+
+    &__img2
+      background: url(../images/presentation-card-2.jpg)
+
+    &__img3
+      background: url(../images/presentation-card-3.jpg)
+
     &__img
       width: 50%
       min-height: 763px
-      background: url(../images/presentation-card-1.png)
       background-repeat: no-repeat
       background-size: cover
