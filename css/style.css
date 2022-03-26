@@ -1,0 +1,114 @@
+@font-face {
+  font-family: 'Lato 400';
+  src: url("../fonts/Lato-Regular.eot");
+  src: url("../fonts/Lato-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato 600';
+  src: url("../fonts/Lato-Semibold.eot");
+  src: url("../fonts/Lato-Semibold.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #E5E5E5;
+  min-width: 320px;
+  font-family: 'Montserrat';
+  font-style: normal;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1792px;
+  padding: 0;
+}
+
+.series-name {
+  text-transform: uppercase;
+}
+
+.primary-button {
+  font-family: 'Lato 600';
+  font-style: normal;
+  font-weight: 600;
+  color: #333333;
+  font-size: 18px;
+  line-height: 32px;
+  padding: 8px 32px;
+  background: #F9F8F9;
+  border: 2px solid #00CCCC;
+  border-radius: 8px;
+}
+
+.primary-button:hover, .primary-button:active, .primary-button:focus {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.presentation-banner {
+  background: url(../images/presentation-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 869px;
+  margin-bottom: 80px;
+}
+
+.presentation__card {
+  flex-direction: row;
+  margin-bottom: 40px;
+  background-color: #ffffff;
+}
+
+.presentation__card__info {
+  width: 50%;
+  padding: 220px 80px;
+}
+
+.presentation__card__title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 56px;
+  margin-bottom: 32px;
+}
+
+.presentation__card__text {
+  font-family: 'Lato 400';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #666666;
+  margin-bottom: 32px;
+}
+
+.presentation__card__img {
+  width: 50%;
+  min-height: 763px;
+  background: url(../images/presentation-card-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*# sourceMappingURL=style.css.map */

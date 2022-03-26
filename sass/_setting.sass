@@ -1,0 +1,40 @@
+*
+  box-sizing: border-box
+
+body
+  background-color: #E5E5E5
+  min-width: 320px
+  font-family: 'Montserrat'
+  font-style: normal
+
+input
+  border: none
+  outline: none
+
+a
+  text-decoration: none
+
+ul
+  list-style-type: none
+  padding: 0
+  margin: 0
+
+.container     // do you need a bootstrap ?
+  max-width: 1792px
+  padding: 0
+
+.series-name
+  text-transform: uppercase
+
+.primary-button
+  @include secondary-font
+  color: $primary
+  font-size: 18px
+  line-height: 32px
+  padding: 8px 32px
+  background: #F9F8F9
+  border: 2px solid #00CCCC
+  border-radius: 8px
+
+  &:hover,&:active,&:focus
+    box-shadow: 0 0 5px rgba(0,0,0,0.5)
