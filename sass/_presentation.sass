@@ -50,26 +50,90 @@
       background-repeat: no-repeat
       background-size: cover
 
-// @media screen and ( max-width: 1441px )
-//   .presentation
+@media screen and ( max-width: 1441px )
+  .presentation
 
-//     &-banner
-//       margin-bottom: 64px
+    &__card
 
-// @media screen and ( max-width: 1025px )
-//   .presentation
+      &__info
+        padding-left: 65px
+        padding-right: 65px
 
-//     &-banner
-//       margin-bottom: 48px
+      &__title
+        font-size: 32px
+        line-height: 48px
+        margin-bottom: 24px
 
-// @media screen and ( max-width: 768px )
-//   .presentation
+      &__text
+        font-size: 14px
+        line-height: 24px
+        margin-bottom: 24px
 
-//     &-banner
-//       margin-bottom: 48px
+      &__text br
+        margin-bottom: 16px
 
-// @media screen and ( max-width: 576px )
-//   .presentation
+      &__img
+        min-height: 572px
+        background-position: 50%
 
-//     &-banner
-//       margin-bottom: 24px
+@media screen and ( max-width: 1025px )
+  .presentation
+
+    &__card
+
+      &__info
+        padding-left: 48px
+        padding-right: 48px
+
+      &__title
+        font-size: 24px
+        line-height: 40px
+        margin-bottom: 16px
+
+      &__text
+        margin-bottom: 16px
+
+      &__img
+        min-height: 525px
+
+@media screen and ( max-width: 768px )
+  .presentation
+
+    &__card
+      flex-direction: column-reverse !important
+
+      &__info
+        width: 100%
+        padding-left: 24px
+        padding-right: 24px
+        padding-bottom: 16px
+
+      &__title
+        font-size: 18px
+        line-height: 32px
+
+      &__img
+        width: 100%
+
+@media screen and ( max-width: 576px )
+  .presentation
+
+    &__card
+
+      &__info
+        padding-left: 16px
+        padding-right: 16px
+
+      &__img
+        min-height: 425px
+
+      &__button
+        max-width: 100%
+
+@media screen and ( max-width: 420px )
+  .presentation
+
+    &__card
+
+      &__img
+        min-height: 300px

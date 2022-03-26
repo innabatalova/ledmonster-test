@@ -40,9 +40,9 @@ ul {
   margin: 0;
 }
 
-.container {
-  max-width: 1792px;
-  padding: 0;
+.container-lm {
+  max-width: 93%;
+  margin: auto;
 }
 
 .series-name {
@@ -57,19 +57,33 @@ ul {
   font-size: 18px;
   line-height: 32px;
   padding: 8px 27px;
-  width: 170px;
+  max-width: 170px;
   background: #F9F8F9;
-  border: 2px solid #00CCCC;
+  border: 2px solid #666666;
   border-radius: 8px;
 }
 
 .primary-button:hover, .primary-button:active, .primary-button:focus {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  border: 2px solid #00CCCC;
 }
 
 .card-reverse {
   display: flex;
   flex-direction: row-reverse !important;
+}
+
+@media screen and (max-width: 1440px) {
+  .primary-button {
+    font-size: 14px;
+    line-height: 24px;
+    max-width: 140px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container-lm {
+    max-width: 90%;
+  }
 }
 
 .presentation-banner {
@@ -134,5 +148,85 @@ ul {
   min-height: 763px;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media screen and (max-width: 1441px) {
+  .presentation__card__info {
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+  .presentation__card__title {
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 24px;
+  }
+  .presentation__card__text {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+  .presentation__card__text br {
+    margin-bottom: 16px;
+  }
+  .presentation__card__img {
+    min-height: 572px;
+    background-position: 50%;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .presentation__card__info {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+  .presentation__card__title {
+    font-size: 24px;
+    line-height: 40px;
+    margin-bottom: 16px;
+  }
+  .presentation__card__text {
+    margin-bottom: 16px;
+  }
+  .presentation__card__img {
+    min-height: 525px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .presentation__card {
+    flex-direction: column-reverse !important;
+  }
+  .presentation__card__info {
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 16px;
+  }
+  .presentation__card__title {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .presentation__card__img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .presentation__card__info {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .presentation__card__img {
+    min-height: 425px;
+  }
+  .presentation__card__button {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .presentation__card__img {
+    min-height: 300px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
