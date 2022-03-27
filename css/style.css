@@ -202,15 +202,15 @@ ul {
 }
 
 .presentation__card__img1 {
-  background: url(../images/presentation-card-1.jpg);
+  background: url(../images/presentation-img/presentation-card-1.jpg);
 }
 
 .presentation__card__img2 {
-  background: url(../images/presentation-card-2.jpg);
+  background: url(../images/presentation-img/presentation-card-2.jpg);
 }
 
 .presentation__card__img3 {
-  background: url(../images/presentation-card-3.jpg);
+  background: url(../images/presentation-img/presentation-card-3.jpg);
 }
 
 .presentation__card__img {
@@ -343,19 +343,19 @@ ul {
 }
 
 .popular__card__img1 {
-  background: url(../images/popular-card-1.png);
+  background: url(../images/popular-img/popular-card-1.png);
 }
 
 .popular__card__img2 {
-  background: url(../images/popular-card-2.png);
+  background: url(../images/popular-img/popular-card-2.png);
 }
 
 .popular__card__img3 {
-  background: url(../images/popular-card-3.png);
+  background: url(../images/popular-img/popular-card-3.png);
 }
 
 .popular__card__img4 {
-  background: url(../images/popular-card-4.png);
+  background: url(../images/popular-img/popular-card-4.png);
 }
 
 .popular__card__img {
@@ -425,6 +425,7 @@ ul {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 80px;
 }
 
 .project__title {
@@ -462,19 +463,19 @@ ul {
 }
 
 .project__card__img1 {
-  background: url(../images/project-card-1.jpg);
+  background: url(../images/project-img/project-card-1.jpg);
 }
 
 .project__card__img2 {
-  background: url(../images/project-card-2.jpg);
+  background: url(../images/project-img/project-card-2.jpg);
 }
 
 .project__card__img3 {
-  background: url(../images/project-card-3.jpg);
+  background: url(../images/project-img/project-card-3.jpg);
 }
 
 .project__card__img4 {
-  background: url(../images/project-card-4.jpg);
+  background: url(../images/project-img/project-card-4.jpg);
 }
 
 .project__card__img {
@@ -519,6 +520,9 @@ ul {
 }
 
 @media screen and (max-width: 576px) {
+  .project__wrapper {
+    margin-bottom: 26px;
+  }
   .project__card {
     width: 100%;
     margin-top: 16px;
@@ -532,5 +536,98 @@ ul {
   .project__card__img {
     min-height: 170px;
   }
+}
+
+.work__card {
+  flex-direction: row;
+  margin-top: 40px;
+  height: 448px;
+}
+
+.work__card__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  padding-left: 80px;
+  padding-right: 80px;
+  background-color: #ffffff;
+}
+
+.work__card__step {
+  font-family: 'Lato 400';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #666666;
+  margin-bottom: 16px;
+}
+
+.work__card__title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  margin-bottom: 24px;
+  color: #333333;
+}
+
+.work__card__text {
+  font-family: 'Lato 400';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #666666;
+  margin-bottom: 24px;
+}
+
+.work__card__text br {
+  margin-bottom: 24px;
+}
+
+.work__card__button {
+  max-width: 235px;
+}
+
+.work__card__button svg {
+  margin-left: 5px;
+  margin-bottom: 2px;
+}
+
+.work__card__img1 {
+  background: url(../images/work-img/work-step-1.jpg);
+}
+
+.work__card__img2 {
+  background: url(../images/work-img/work-step-2.jpg);
+}
+
+.work__card__img3 {
+  background: url(../images/work-img/work-step-3.jpg);
+}
+
+.work__card__img4 {
+  background: url(../images/work-img/work-step-4.jpg);
+}
+
+.work__card__img5 {
+  background: url(../images/work-img/work-step-5.jpg);
+}
+
+.work__card__img6 {
+  background: url(../images/work-img/work-step-6.jpg);
+}
+
+.work__card__img7 {
+  background: url(../images/work-img/work-step-7.jpg);
+}
+
+.work__card__img {
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /*# sourceMappingURL=style.css.map */

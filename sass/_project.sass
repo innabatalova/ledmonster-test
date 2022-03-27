@@ -4,6 +4,7 @@
     display: flex
     justify-content: space-between
     flex-wrap: wrap
+    margin-bottom: 80px
 
   &__title
     margin-bottom: 0
@@ -31,16 +32,16 @@
       margin-bottom: 0
 
     &__img1
-      background: url(../images/project-card-1.jpg)
+      background: url(../images/project-img/project-card-1.jpg)
 
     &__img2
-      background: url(../images/project-card-2.jpg)
+      background: url(../images/project-img/project-card-2.jpg)
 
     &__img3
-      background: url(../images/project-card-3.jpg)
+      background: url(../images/project-img/project-card-3.jpg)
 
     &__img4
-      background: url(../images/project-card-4.jpg)
+      background: url(../images/project-img/project-card-4.jpg)
 
     &__img
       min-height: 520px
@@ -86,6 +87,9 @@
 
 @media screen and ( max-width: 576px )
   .project
+
+    &__wrapper
+      margin-bottom: 26px
 
     &__card
       width: 100%
