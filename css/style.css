@@ -799,4 +799,70 @@ ul {
 .feedback__card__link:hover, .feedback__card__link:active, .feedback__card__link:focus {
   color: #00CCCC;
 }
+
+@media screen and (max-width: 1440px) {
+  .feedback__card {
+    padding: 24px;
+    margin-top: 32px;
+    min-height: 250px;
+  }
+  .feedback__card__wrapper {
+    margin-bottom: 24px;
+  }
+  .feedback__card__bio {
+    margin-left: 16px;
+  }
+  .feedback__card__avatar img {
+    width: 76px;
+    height: 76px;
+  }
+  .feedback__card__name {
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 4px;
+  }
+  .feedback__card__title {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .feedback__card__text {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+  .feedback__card__link {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .feedback__card {
+    padding: 16px;
+    margin-top: 24px;
+  }
+  .feedback__card__wrapper {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .feedback__card {
+    max-height: 292px;
+  }
+  .feedback__card__bio {
+    margin-left: 0;
+  }
+  .feedback__card__avatar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 695px) {
+  .feedback__card {
+    width: 100%;
+    margin-top: 16px;
+    max-height: max-content;
+  }
+}
 /*# sourceMappingURL=style.css.map */
