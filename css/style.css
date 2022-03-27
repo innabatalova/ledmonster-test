@@ -484,6 +484,9 @@ ul {
 }
 
 @media screen and (max-width: 1440px) {
+  .project__wrapper {
+    margin-bottom: 64px;
+  }
   .project__card {
     margin-top: 32px;
   }
@@ -505,6 +508,9 @@ ul {
 }
 
 @media screen and (max-width: 1024px) {
+  .project__wrapper {
+    margin-bottom: 48px;
+  }
   .project__card {
     margin-top: 24px;
   }
@@ -521,7 +527,7 @@ ul {
 
 @media screen and (max-width: 576px) {
   .project__wrapper {
-    margin-bottom: 26px;
+    margin-bottom: 24px;
   }
   .project__card {
     width: 100%;
@@ -584,6 +590,11 @@ ul {
   margin-bottom: 24px;
 }
 
+.work__card__text_garanty {
+  display: flex;
+  flex-direction: column;
+}
+
 .work__card__text br {
   margin-bottom: 24px;
 }
@@ -629,5 +640,86 @@ ul {
   width: 50%;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media screen and (max-width: 1440px) {
+  .work__card {
+    height: 336px;
+    margin-top: 32px;
+  }
+  .work__card__info {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+  .work__card__step {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 8px;
+  }
+  .work__card__title {
+    font-size: 24px;
+    line-height: 40px;
+    margin-bottom: 16px;
+  }
+  .work__card__text {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+  .work__card__text br {
+    margin-bottom: 16px;
+  }
+  .work__card__button {
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    max-width: 193px;
+  }
+  .work__card__img {
+    background-position-x: 50%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .work__card {
+    height: 245px;
+    margin-top: 24px;
+  }
+  .work__card__info {
+    width: 100%;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+  .work__card__img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .work__card__info {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .work__card__title {
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .work__card {
+    margin-top: 16px;
+    height: auto;
+    min-height: 170px;
+  }
+  .work__card__info {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .work__card__button {
+    max-width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
