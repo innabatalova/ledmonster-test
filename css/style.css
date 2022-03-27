@@ -45,6 +45,10 @@ ul {
   margin: auto;
 }
 
+.wrapper {
+  margin-bottom: 80px;
+}
+
 .series-name {
   text-transform: uppercase;
 }
@@ -117,6 +121,9 @@ ul {
 }
 
 @media screen and (max-width: 1440px) {
+  .wrapper {
+    margin-bottom: 64px;
+  }
   .primary-button {
     font-size: 14px;
     line-height: 24px;
@@ -136,6 +143,9 @@ ul {
 }
 
 @media screen and (max-width: 768px) {
+  .wrapper {
+    margin-bottom: 48px;
+  }
   .container-lm {
     max-width: 90%;
   }
@@ -146,6 +156,9 @@ ul {
 }
 
 @media screen and (max-width: 576px) {
+  .wrapper {
+    margin-bottom: 24px;
+  }
   .title-wrapper {
     flex-direction: column-reverse;
     align-items: start;
@@ -305,7 +318,6 @@ ul {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 80px;
 }
 
 .popular__title {
@@ -403,9 +415,6 @@ ul {
 }
 
 @media screen and (max-width: 576px) {
-  .popular__wrapper {
-    margin-bottom: 26px;
-  }
   .popular__card {
     width: 100%;
     margin-top: 16px;
@@ -425,7 +434,6 @@ ul {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 80px;
 }
 
 .project__title {
@@ -484,9 +492,6 @@ ul {
 }
 
 @media screen and (max-width: 1440px) {
-  .project__wrapper {
-    margin-bottom: 64px;
-  }
   .project__card {
     margin-top: 32px;
   }
@@ -508,9 +513,6 @@ ul {
 }
 
 @media screen and (max-width: 1024px) {
-  .project__wrapper {
-    margin-bottom: 48px;
-  }
   .project__card {
     margin-top: 24px;
   }
@@ -526,9 +528,6 @@ ul {
 }
 
 @media screen and (max-width: 576px) {
-  .project__wrapper {
-    margin-bottom: 24px;
-  }
   .project__card {
     width: 100%;
     margin-top: 16px;
@@ -721,5 +720,83 @@ ul {
   .work__card__button {
     max-width: 100%;
   }
+}
+
+.feedback__title {
+  margin-bottom: 0;
+}
+
+.feedback__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.feedback__card {
+  padding: 32px;
+  width: 49%;
+  min-height: 332px;
+  margin-top: 40px;
+  background: #ffffff;
+  border: 1px solid #DBDBDB;
+}
+
+.feedback__card__wrapper {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.feedback__card__bio {
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+}
+
+.feedback__card__avatar img {
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+}
+
+.feedback__card__name {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 40px;
+  color: #333333;
+  margin-bottom: 4px;
+}
+
+.feedback__card__title {
+  font-family: 'Lato 400';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #666666;
+}
+
+.feedback__card__text {
+  font-family: 'Lato 400';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #555555;
+  margin-bottom: 24px;
+}
+
+.feedback__card__link {
+  font-family: 'Lato 600';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: #333333;
+}
+
+.feedback__card__link:hover, .feedback__card__link:active, .feedback__card__link:focus {
+  color: #00CCCC;
 }
 /*# sourceMappingURL=style.css.map */
