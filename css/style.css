@@ -865,4 +865,144 @@ ul {
     max-height: max-content;
   }
 }
+
+.interaction {
+  margin-top: 80px;
+}
+
+.interaction-contract {
+  flex-direction: row;
+  height: 765px;
+}
+
+.interaction-contract__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  padding-left: 80px;
+  padding-right: 80px;
+  background-color: #ffffff;
+}
+
+.interaction-contract__title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 56px;
+  margin-bottom: 32px;
+  color: #222222;
+}
+
+.interaction-contract__text {
+  font-family: 'Lato 400';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 32px;
+  color: #666666;
+}
+
+.interaction-contract__button {
+  max-width: 160px;
+}
+
+.interaction-contract__img {
+  background: url(../images/interaction-img/interaction-contract-card.jpg);
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 50%;
+}
+
+@media screen and (max-width: 1440px) {
+  .interaction {
+    margin-top: 64px;
+  }
+  .interaction-contract {
+    height: 575px;
+  }
+  .interaction-contract__info {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+  .interaction-contract__title {
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 24px;
+  }
+  .interaction-contract__text {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+  .interaction-contract__button {
+    max-width: 140px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .interaction {
+    margin-top: 48px;
+  }
+  .interaction-contract {
+    height: 415px;
+  }
+  .interaction-contract__info {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+  .interaction-contract__title {
+    font-size: 24px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 845px) {
+  .interaction-contract {
+    height: max-content;
+    border: none;
+  }
+  .interaction-contract__info {
+    padding-left: 24px;
+    padding-right: 0;
+    background-color: #E5E5E5;
+  }
+  .interaction-contract__title {
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 16px;
+  }
+  .interaction-contract__text {
+    margin-bottom: 16px;
+  }
+  .interaction-contract__button {
+    background-color: inherit;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .interaction {
+    margin-top: 24px;
+  }
+  .interaction-contract {
+    flex-direction: column-reverse !important;
+  }
+  .interaction-contract__info {
+    width: 100%;
+    padding: 16px;
+  }
+  .interaction-contract__title {
+    margin-bottom: 8px;
+  }
+  .interaction-contract__button {
+    max-width: 100%;
+  }
+  .interaction-contract__img {
+    width: 100%;
+    min-height: 245px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
