@@ -848,7 +848,7 @@ ul {
 
 @media screen and (max-width: 768px) {
   .feedback__card {
-    max-height: 292px;
+    max-height: max-content;
   }
   .feedback__card__bio {
     margin-left: 0;
@@ -873,6 +873,7 @@ ul {
 .interaction-contract {
   flex-direction: row;
   height: 765px;
+  margin-bottom: 80px;
 }
 
 .interaction-contract__info {
@@ -923,6 +924,7 @@ ul {
   }
   .interaction-contract {
     height: 575px;
+    margin-bottom: 64px;
   }
   .interaction-contract__info {
     padding-left: 64px;
@@ -949,6 +951,7 @@ ul {
   }
   .interaction-contract {
     height: 415px;
+    margin-bottom: 48px;
   }
   .interaction-contract__info {
     padding-left: 48px;
@@ -989,6 +992,7 @@ ul {
   }
   .interaction-contract {
     flex-direction: column-reverse !important;
+    margin-bottom: 24px;
   }
   .interaction-contract__info {
     width: 100%;
@@ -1001,6 +1005,150 @@ ul {
     max-width: 100%;
   }
   .interaction-contract__img {
+    width: 100%;
+    min-height: 245px;
+  }
+}
+
+.interaction {
+  margin-top: 80px;
+}
+
+.interaction-solutions {
+  flex-direction: row;
+  height: 765px;
+  margin-bottom: 80px;
+}
+
+.interaction-solutions__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  padding-left: 80px;
+  padding-right: 80px;
+  background-color: #ffffff;
+}
+
+.interaction-solutions__title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 56px;
+  margin-bottom: 32px;
+  color: #222222;
+}
+
+.interaction-solutions__text {
+  font-family: 'Lato 400';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 32px;
+  color: #666666;
+}
+
+.interaction-solutions__button {
+  max-width: 160px;
+}
+
+.interaction-solutions__img {
+  background: url(../images/interaction-img/interaction-solutions-card.jpg);
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 50%;
+}
+
+@media screen and (max-width: 1440px) {
+  .interaction {
+    margin-top: 64px;
+  }
+  .interaction-solutions {
+    height: 575px;
+    margin-bottom: 64px;
+  }
+  .interaction-solutions__info {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+  .interaction-solutions__title {
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 24px;
+  }
+  .interaction-solutions__text {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+  .interaction-solutions__button {
+    max-width: 140px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .interaction {
+    margin-top: 48px;
+  }
+  .interaction-solutions {
+    height: 415px;
+    margin-bottom: 48px;
+  }
+  .interaction-solutions__info {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+  .interaction-solutions__title {
+    font-size: 24px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 845px) {
+  .interaction-solutions {
+    height: max-content;
+    border: none;
+  }
+  .interaction-solutions__info {
+    padding-left: 24px;
+    padding-right: 0;
+    background-color: #E5E5E5;
+  }
+  .interaction-solutions__title {
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 16px;
+  }
+  .interaction-solutions__text {
+    margin-bottom: 16px;
+  }
+  .interaction-solutions__button {
+    background-color: inherit;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .interaction {
+    margin-top: 24px;
+  }
+  .interaction-solutions {
+    flex-direction: column-reverse !important;
+    margin-bottom: 24px;
+  }
+  .interaction-solutions__info {
+    width: 100%;
+    padding: 16px;
+  }
+  .interaction-solutions__title {
+    margin-bottom: 8px;
+  }
+  .interaction-solutions__button {
+    max-width: 100%;
+  }
+  .interaction-solutions__img {
     width: 100%;
     min-height: 245px;
   }
