@@ -1493,4 +1493,221 @@ ul {
     min-height: 245px;
   }
 }
+
+.interaction-catalog {
+  height: 765px;
+  background: url(../images/interaction-img/interaction-catalog-card.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 80px;
+}
+
+.interaction-catalog__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.interaction-catalog__title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 56px;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+.interaction-catalog__text {
+  font-family: 'Lato 400';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+
+.interaction-catalog__form {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.interaction-catalog__namewrap, .interaction-catalog__phonewrap {
+  position: relative;
+}
+
+.interaction-catalog__field {
+  padding-left: 16px;
+  margin-bottom: 24px;
+  height: 75px;
+  width: 320px;
+  font-family: 'Lato 400';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  background-color: inherit;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+}
+
+.interaction-catalog__field::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.interaction-catalog__field__name, .interaction-catalog__field__phone {
+  padding-top: 15px;
+}
+
+.interaction-catalog__namelabel {
+  position: absolute;
+  left: 16px;
+  top: 5px;
+  color: #ffffff;
+}
+
+.interaction-catalog__phonelabel {
+  position: absolute;
+  left: 16px;
+  top: 5px;
+  color: #ffffff;
+}
+
+.interaction-catalog__button {
+  width: 320px;
+  height: 75px;
+  font-family: 'Lato 600';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  border: 1px solid #FFFFFF;
+  border-radius: 8px;
+  background-color: inherit;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1440px) {
+  .interaction-catalog {
+    height: 575px;
+    margin-bottom: 64px;
+  }
+  .interaction-catalog__info {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+  .interaction-catalog__title {
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 16px;
+  }
+  .interaction-catalog__text {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+  .interaction-catalog__field {
+    width: 250px;
+    height: 55px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .interaction-catalog__namelabel, .interaction-catalog__phonelabel {
+    font-size: 10px;
+    line-height: 16px;
+  }
+  .interaction-catalog__button {
+    width: 250px;
+    height: 55px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .interaction-catalog__button svg {
+    width: 7px;
+    height: 24px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .interaction-catalog__info {
+    width: 100%;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+  .interaction-catalog__field, .interaction-catalog__button {
+    width: 420px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .interaction-catalog {
+    height: 340px;
+    margin-bottom: 48px;
+    background-image: none;
+    background-color: #ffffff;
+  }
+  .interaction-catalog__info {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .interaction-catalog__title {
+    font-size: 24px;
+    line-height: 40px;
+    margin-bottom: 8px;
+    color: #222222;
+  }
+  .interaction-catalog__text {
+    margin-bottom: 16px;
+    color: #555555;
+  }
+  .interaction-catalog__field {
+    width: 300px;
+    color: #555555;
+    border-color: #DBDBDB;
+  }
+  .interaction-catalog__field::placeholder {
+    color: #555555;
+    font-size: 10px;
+    line-height: 16px;
+  }
+  .interaction-catalog__namelabel, .interaction-catalog__phonelabel {
+    color: #999999;
+  }
+  .interaction-catalog__button {
+    width: 300px;
+    color: #333333;
+    border-color: #DBDBDB;
+  }
+  .interaction-catalog__button svg path {
+    fill: #999999;
+  }
+}
+
+@media screen and (max-width: 715px) {
+  .interaction-catalog {
+    height: max-content;
+  }
+  .interaction-catalog__info {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .interaction-catalog__title {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .interaction-catalog__field, .interaction-catalog__button, .interaction-catalog__namewrap, .interaction-catalog__phonewrap {
+    max-width: 100%;
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
