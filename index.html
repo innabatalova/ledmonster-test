@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+  
   </head>
   <body>
     <main class="presentation">
@@ -458,34 +459,45 @@
               помещения.
             </p>
             <form action="#" class="interaction-selection__form">
+              <label for="name" class="interaction-selection__namelabel"
+                >Имя</label
+              >
               <input
                 type="text"
-                class="interaction-selection__field"
-                placeholder="Имя"
+                id="name"
+                class="interaction-selection__field interaction-selection__field__name"
+                placeholder="Богдан"
               />
+
               <input
                 type="email"
                 placeholder="E-mail"
                 class="interaction-selection__field"
               />
+
+              <label for="phone" class="interaction-selection__phonelabel"
+                >Телефон</label
+              >
               <input
                 type="phone"
                 placeholder="+7 999 999 99 99"
-                class="interaction-selection__field"
+                id="phone"
+                class="interaction-selection__field interaction-selection__field__phone"
               />
-              <button class="interaction-selection__button">
-                Загрузить проект
+              <label for="file" class="interaction-selection__filelabel"
+                >Загрузить проект
+                <svg width="14" height="17" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 6H10V0H4V6H0L7 13L14 6ZM0 15V17H14V15H0Z" fill="white"/>
+                </svg></label
+              >
+              <input type="file" method="POST" id="file" class="interaction-selection__file" multiple>
+              </input>
+              <button class="interaction-selection__button" type="submit" >Отправить
+                <svg width="11" height="16" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.30744 0L0.345703 1.88L6.71788 8L0.345703 14.12L2.30744 16L10.6553 8L2.30744 0Z" fill="#FFFFFF"/>
+                </svg>
               </button>
-              <button class="interaction-selection__button">Отправить</button>
-              <div class="interaction-selection__userfile">
-                Название проекта.jpg
-              </div>
-              <div class="interaction-selection__userfile">
-                Название проекта.jpg
-              </div>
-              <div class="interaction-selection__userfile">
-                Название проекта.jpg
-              </div>
+              
             </form>
           </div>
         </div>
