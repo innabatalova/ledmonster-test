@@ -1720,6 +1720,7 @@ ul {
 .publication__card {
   width: 32%;
   margin-top: 40px;
+  cursor: pointer;
 }
 
 .publication__card__img {
@@ -1742,5 +1743,49 @@ ul {
   font-size: 24px;
   line-height: 40px;
   color: #333333;
+}
+
+@media screen and (max-width: 1440px) {
+  .publication__card {
+    margin-top: 32px;
+  }
+  .publication__card__img {
+    min-height: 320px;
+  }
+  .publication__card__info {
+    padding: 16px;
+    padding-right: 8px;
+  }
+  .publication__card__info svg {
+    width: 18px;
+    height: 18px;
+  }
+  .publication__card__text {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .publication__card {
+    width: 48%;
+    margin-top: 24px;
+  }
+  .publication__card__img {
+    min-height: 280px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .publication__card__img {
+    min-height: 205px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .publication__card {
+    width: 100%;
+    margin-top: 16px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
