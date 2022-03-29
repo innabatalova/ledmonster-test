@@ -1710,4 +1710,37 @@ ul {
     width: 100%;
   }
 }
+
+.publication__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.publication__card {
+  width: 32%;
+  margin-top: 40px;
+}
+
+.publication__card__img {
+  min-height: 425px;
+  background-color: #EDEDED;
+}
+
+.publication__card__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+  padding-right: 15px;
+}
+
+.publication__card__text {
+  font-family: 'Lato 600';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 40px;
+  color: #333333;
+}
 /*# sourceMappingURL=style.css.map */
