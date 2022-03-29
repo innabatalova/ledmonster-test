@@ -1050,6 +1050,10 @@ ul {
   justify-content: space-between;
 }
 
+.interaction-selection__wrapname, .interaction-selection__wrapphone {
+  position: relative;
+}
+
 .interaction-selection__field {
   padding-left: 16px;
   margin-bottom: 24px;
@@ -1096,7 +1100,6 @@ ul {
   font-family: 'Lato 600';
   font-style: normal;
   font-weight: 600;
-  font-weight: 500;
   font-size: 18px;
   line-height: 32px;
   color: #ffffff;
@@ -1137,6 +1140,214 @@ ul {
   border-radius: 8px;
   background-color: inherit;
   color: #ffffff;
+}
+
+@media screen and (max-width: 1835px) {
+  .interaction-selection__field {
+    max-width: 280px;
+    width: 280px;
+  }
+  .interaction-selection__filelabel {
+    height: 75px;
+    width: 280px;
+    padding-top: 20px;
+  }
+  .interaction-selection__phonelabel {
+    right: 0;
+    left: 16px;
+  }
+  .interaction-selection__button {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  .interaction-selection {
+    height: 575px;
+    margin-bottom: 64px;
+  }
+  .interaction-selection__info {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+  .interaction-selection__title {
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 24px;
+  }
+  .interaction-selection__text {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+  .interaction-selection__field {
+    max-width: 260px;
+    width: 260px;
+    height: 55px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .interaction-selection__file {
+    height: 40px;
+    width: 35px;
+    right: 8px;
+    bottom: 38%;
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 5px;
+  }
+  .interaction-selection__filelabel {
+    height: 55px;
+    width: 260px;
+    padding-top: 15px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .interaction-selection__namelabel, .interaction-selection__phonelabel {
+    font-size: 10px;
+    line-height: 16px;
+  }
+  .interaction-selection__button {
+    width: 100%;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .interaction-selection__button svg {
+    width: 7px;
+    height: 24px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .interaction-selection__info {
+    width: 100%;
+  }
+  .interaction-selection__file {
+    width: 180px;
+    bottom: -50px;
+    left: 0;
+  }
+  .interaction-selection__filelabel {
+    width: 48%;
+  }
+  .interaction-selection__button {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .interaction-selection {
+    height: 415px;
+    margin-bottom: 48px;
+  }
+  .interaction-selection__info {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+  .interaction-selection__title {
+    margin-bottom: 16px;
+  }
+  .interaction-selection__filelabel {
+    height: 40px;
+    padding-top: 5px;
+  }
+  .interaction-selection__button {
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 945px) {
+  .interaction-selection__field {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .interaction-selection {
+    height: 340px;
+    background-image: none;
+    background-color: #ffffff;
+  }
+  .interaction-selection__info {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .interaction-selection__title {
+    font-size: 24px;
+    line-height: 40px;
+    margin-bottom: 8px;
+    color: #222222;
+  }
+  .interaction-selection__text {
+    margin-bottom: 16px;
+    color: #555555;
+  }
+  .interaction-selection__field {
+    width: 200px;
+    color: #555555;
+    border-color: #DBDBDB;
+  }
+  .interaction-selection__field::placeholder {
+    color: #555555;
+    font-size: 10px;
+    line-height: 16px;
+  }
+  .interaction-selection__namelabel, .interaction-selection__phonelabel {
+    color: #999999;
+  }
+  .interaction-selection__filelabel {
+    padding-top: 10px;
+    color: #333333;
+    border-color: #DBDBDB;
+  }
+  .interaction-selection__filelabel svg path {
+    fill: #999999;
+  }
+  .interaction-selection__file {
+    color: #333333;
+    border-color: #DBDBDB;
+  }
+  .interaction-selection__button {
+    color: #333333;
+    border-color: #DBDBDB;
+  }
+  .interaction-selection__button svg path {
+    fill: #999999;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  .interaction-selection {
+    height: max-content;
+  }
+  .interaction-selection__info {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .interaction-selection__field, .interaction-selection__button, .interaction-selection__wrapname, .interaction-selection__wrapphone {
+    max-width: 100%;
+    width: 100%;
+  }
+  .interaction-selection__file {
+    position: static;
+  }
+  .interaction-selection__filelabel {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .interaction-selection__title {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .interaction-selection__file {
+    margin-bottom: 16px;
+  }
+  .interaction-selection__filelabel {
+    width: 100%;
+  }
 }
 
 .interaction {
