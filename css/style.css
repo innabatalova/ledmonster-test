@@ -788,16 +788,11 @@ ul {
 }
 
 .feedback__card__link {
-  font-family: 'Lato 600';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 32px;
-  color: #333333;
+  right: 0;
 }
 
-.feedback__card__link:hover, .feedback__card__link:active, .feedback__card__link:focus {
-  color: #00CCCC;
+.feedback__card__link:after {
+  left: 170px;
 }
 
 @media screen and (max-width: 1440px) {
@@ -1008,6 +1003,59 @@ ul {
     width: 100%;
     min-height: 245px;
   }
+}
+
+.interaction-selection {
+  height: 765px;
+  background: url(../images/interaction-img/interaction-selection-card.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 80px;
+}
+
+.interaction-selection__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.interaction-selection__title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 56px;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+
+.interaction-selection__text {
+  font-family: 'Lato 400';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+
+.interaction-selection__field {
+  padding-left: 16px;
+  height: 75px;
+  max-width: 230px;
+  font-family: 'Lato 400';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  background-color: inherit;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
 }
 
 .interaction {
