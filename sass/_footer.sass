@@ -45,3 +45,56 @@
     font-size: 18px
     line-height: 32px
     color: #999999
+
+@media screen and ( max-width: 1440px )
+  .footer
+
+    &__nav, &__social
+
+      &__item
+        font-size: 14px
+        line-height: 24px
+
+    &__copyright
+      font-size: 14px
+      line-height: 24px
+
+@media screen and ( max-width: 1024px )
+  .footer
+
+    &__nav
+      margin-bottom: 16px
+
+      &__item
+        margin-right: 24px
+
+    &__social
+      padding-top: 0
+      flex-direction: column
+
+      &__wrapper
+        margin-bottom: 16px
+
+@media screen and ( max-width: 890px )
+  .footer
+
+    &__social
+
+      &__wrapper
+        flex-direction: column
+
+      &__item
+        margin-bottom: 16px
+
+@media screen and ( max-width: 567px )
+  .footer
+
+    &__nav
+
+      &__item
+        margin-right: 16px
+
+    &__social
+
+      &__item
+        margin-right: 16px
