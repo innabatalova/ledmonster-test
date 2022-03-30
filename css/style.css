@@ -735,7 +735,7 @@ ul {
 }
 
 .work__card__button {
-  max-width: 235px;
+  max-width: 250px;
 }
 
 .work__card__button svg {
@@ -964,6 +964,9 @@ ul {
   .feedback__card__link {
     font-size: 14px;
     line-height: 24px;
+  }
+  .feedback__card__link:after {
+    left: 140px;
   }
 }
 
@@ -1293,7 +1296,7 @@ ul {
     left: 16px;
   }
   .interaction-selection__button {
-    width: 300px;
+    width: 280px;
   }
 }
 
