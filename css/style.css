@@ -1788,4 +1788,67 @@ ul {
     margin-top: 16px;
   }
 }
+
+.footer {
+  padding-bottom: 40px;
+  background: url(../images/footer-logo.svg);
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 100%;
+}
+
+.footer__nav {
+  padding-top: 40px;
+  border-top: 1px solid #DBDBDB;
+}
+
+.footer__nav__item {
+  margin-right: 32px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #333333;
+  cursor: pointer;
+}
+
+.footer__nav__item:hover, .footer__nav__item:active, .footer__nav__item:focus {
+  color: #000000;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.footer__social__wrapper {
+  display: flex;
+}
+
+.footer__social__item {
+  margin-right: 32px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: #999999;
+  cursor: pointer;
+}
+
+.footer__social__item:hover, .footer__social__item:active, .footer__social__item:focus {
+  color: #00CCCC;
+}
+
+.footer__copyright {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #999999;
+}
 /*# sourceMappingURL=style.css.map */

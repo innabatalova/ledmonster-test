@@ -1,0 +1,47 @@
+.footer
+  padding-bottom: 40px
+  background: url(../images/footer-logo.svg)
+  background-repeat: no-repeat
+  background-position-x: 100%
+  background-position-y: 100%
+
+  &__nav
+    padding-top: 40px
+    border-top: 1px solid #DBDBDB
+
+    &__item
+      margin-right: 32px
+      @include primary-slim
+      font-size: 18px
+      line-height: 32px
+      color: $primary
+      cursor: pointer
+
+      &:hover,&:active,&:focus
+        color: #000000
+
+  &__social
+    display: flex
+    justify-content: space-between
+    padding-top: 40px
+
+    &__wrapper
+      display: flex
+
+    &__item
+      margin-right: 32px
+      @include primary-font
+      font-weight: 500
+      font-size: 18px
+      line-height: 32px
+      color: #999999
+      cursor: pointer
+
+      &:hover,&:active,&:focus
+        color: $link-color
+
+  &__copyright
+    @include primary-slim
+    font-size: 18px
+    line-height: 32px
+    color: #999999
