@@ -169,6 +169,61 @@ ul {
   }
 }
 
+.header {
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  background: #F9F8F9;
+  z-index: 5;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header__logo {
+  cursor: pointer;
+}
+
+.header__nav {
+  display: flex;
+}
+
+.header__nav__item {
+  margin-right: 32px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.header__nav__item a {
+  color: #333333;
+}
+
+.header__nav__item a:hover, .header__nav__item a:active, .header__nav__item a:focus {
+  color: #00CCCC;
+}
+
+.header__contacts {
+  display: flex;
+}
+
+.header__contacts__item {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: #333333;
+  margin-left: 35px;
+  cursor: pointer;
+}
+
 .presentation-banner {
   background: url(../images/presentation-banner.png);
   background-repeat: no-repeat;

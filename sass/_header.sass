@@ -1,0 +1,41 @@
+.header
+  position: fixed
+  height: 100px
+  width: 100%
+  background: #F9F8F9
+  z-index: 5
+
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    padding-top: 32px
+    padding-bottom: 32px
+
+  &__logo
+    cursor: pointer
+
+  &__nav
+    display: flex
+
+    &__item
+      margin-right: 32px
+      @include primary-slim
+      font-size: 18px
+      line-height: 32px
+
+    &__item a
+      color: $primary
+
+      &:hover,&:active,&:focus
+        color: $link-color
+
+  &__contacts
+    display: flex
+
+    &__item
+      @include primary-font
+      font-size: 18px
+      line-height: 32px
+      color: $primary
+      margin-left: 35px
+      cursor: pointer
