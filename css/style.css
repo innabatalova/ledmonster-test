@@ -224,6 +224,87 @@ ul {
   cursor: pointer;
 }
 
+.header__contacts__burger {
+  display: none;
+}
+
+@media screen and (max-width: 1720px) {
+  .header__nav__item {
+    margin-right: 24px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .header__contacts__item {
+    margin-left: 24px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .header__contacts__item svg {
+    width: 21px;
+    height: 21px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .header {
+    height: 70px;
+  }
+  .header__wrapper {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .header__logo img {
+    width: 228px;
+    height: 24px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .header__logo {
+    background: url(../images/header-logo-small.svg);
+    width: 24px;
+    height: 24px;
+  }
+  .header__logo img {
+    display: none;
+  }
+  .header__nav__item {
+    margin-right: 15px;
+  }
+}
+
+@media screen and (max-width: 1015px) {
+  .header__logo {
+    background: none;
+    width: auto;
+    height: auto;
+  }
+  .header__logo img {
+    display: block;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__contacts__burger {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 665px) {
+  .header__logo img {
+    width: 150px;
+    height: 16px;
+  }
+  .header__wrapper {
+    align-items: center;
+    padding-top: 20;
+    padding-bottom: 20px;
+  }
+  .header__contacts__phone, .header__contacts__whatsapp {
+    display: none;
+  }
+}
+
 .presentation-banner {
   background: url(../images/presentation-banner.png);
   background-repeat: no-repeat;
