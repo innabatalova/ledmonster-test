@@ -12,8 +12,7 @@
     &__item
       margin-right: 32px
       @include primary-slim
-      font-size: 18px
-      line-height: 32px
+      @include md-size
       color: $primary
       cursor: pointer
 
@@ -29,21 +28,27 @@
       display: flex
 
     &__item
+      display: flex
+      align-items: center
       margin-right: 32px
       @include primary-font
       font-weight: 500
-      font-size: 18px
-      line-height: 32px
+      @include md-size
       color: #999999
       cursor: pointer
 
       &:hover,&:active,&:focus
         color: $link-color
 
+        & svg path
+          fill: $link-color
+
+    &__item svg
+      margin-right: 7px
+
   &__copyright
     @include primary-slim
-    font-size: 18px
-    line-height: 32px
+    @include md-size
     color: #999999
 
 @media screen and ( max-width: 1440px )
@@ -52,12 +57,10 @@
     &__nav, &__social
 
       &__item
-        font-size: 14px
-        line-height: 24px
+        @include sm-size
 
     &__copyright
-      font-size: 14px
-      line-height: 24px
+      @include sm-size
 
 @media screen and ( max-width: 1024px )
   .footer
@@ -73,6 +76,7 @@
       flex-direction: column
 
       &__wrapper
+        flex-wrap: wrap
         margin-bottom: 16px
 
 @media screen and ( max-width: 890px )
@@ -80,11 +84,13 @@
 
     &__social
 
-      &__wrapper
-        flex-direction: column
-
       &__item
         margin-bottom: 16px
+        margin-right: 16px
+
+      &__item svg
+        width: 18px
+        height: 18px
 
 @media screen and ( max-width: 567px )
   .footer

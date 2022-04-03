@@ -32,21 +32,18 @@
 
     &__name
       @include primary-font
-      font-size: 24px
-      line-height: 40px
+      @include exmd-size
       color: $primary
       margin-bottom: 4px
 
     &__title
       @include secondary-slim
-      font-size: 18px
-      line-height: 32px
+      @include md-size
       color: $secondary
 
     &__text
       @include secondary-slim
-      font-size: 18px
-      line-height: 32px
+      @include md-size
       color: #555555
       margin-bottom: 24px
 
@@ -75,22 +72,18 @@
         height: 76px
 
       &__name
-        font-size: 18px
-        line-height: 32px
+        @include md-size
         margin-bottom: 4px
 
       &__title
-        font-size: 14px
-        line-height: 24px
+        @include sm-size
 
       &__text
-        font-size: 14px
-        line-height: 24px
+        @include sm-size
         margin-bottom: 16px
 
       &__link
-        font-size: 14px
-        line-height: 24px
+        @include sm-size
 
         &:after
           left: 140px

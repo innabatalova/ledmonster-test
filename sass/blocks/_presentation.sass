@@ -1,14 +1,17 @@
 .presentation
+  position: relative
 
-  &-banner
+  &__banner
     background: url(../images/presentation-banner.png)
     background-repeat: no-repeat
     background-size: contain
     height: 50vw
+    background-position-y: 100px
+    margin-bottom: 80px
 
   &__card
     flex-direction: row
-    margin-bottom: 40px
+    margin-bottom: 80px
     background-color: $background
 
     &__info
@@ -21,14 +24,12 @@
 
     &__title
       @include primary-font
-      font-size: 40px
-      line-height: 56px
+      @include exlg-size
       margin-bottom: 32px
 
     &__text
       @include secondary-slim
-      font-size: 18px
-      line-height: 32px
+      @include md-size
       color: $secondary
       margin-bottom: 32px
 
@@ -54,6 +55,10 @@
 @media screen and ( max-width: 1440px )
   .presentation
 
+    &__banner
+      background-position-y: 70px
+      margin-bottom: 64px
+
     &__card
 
       &__info
@@ -61,13 +66,11 @@
         padding-right: 65px
 
       &__title
-        font-size: 32px
-        line-height: 48px
+        @include lg-size
         margin-bottom: 24px
 
       &__text
-        font-size: 14px
-        line-height: 24px
+        @include sm-size
         margin-bottom: 24px
 
       &__text br
@@ -80,15 +83,18 @@
 @media screen and ( max-width: 1024px )
   .presentation
 
+    &__banner
+      margin-bottom: 48px
+
     &__card
+      margin-bottom: 35px
 
       &__info
         padding-left: 48px
         padding-right: 48px
 
       &__title
-        font-size: 24px
-        line-height: 40px
+        @include exmd-size
         margin-bottom: 16px
 
       &__text
@@ -110,14 +116,18 @@
         padding-bottom: 16px
 
       &__title
-        font-size: 18px
-        line-height: 32px
+        @include md-size
 
       &__img
         width: 100%
 
 @media screen and ( max-width: 576px )
   .presentation
+
+    &__banner
+      height: 60vw
+      background-position-y: auto
+      margin-bottom: 24px
 
     &__card
 
@@ -131,10 +141,11 @@
       &__button
         max-width: 100%
 
-@media screen and ( max-width: 420px )
-  .presentation
+// @media screen and ( max-width: 420px )
+//   .presentation
+//     padding-top: 30px
 
-    &__card
+//     &__card
 
-      &__img
-        min-height: 300px
+//       &__img
+//         min-height: 300px

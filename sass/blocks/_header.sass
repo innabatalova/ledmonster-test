@@ -18,10 +18,11 @@
     display: flex
 
     &__item
+      display: flex
+      align-items: center
       margin-right: 32px
       @include primary-slim
-      font-size: 18px
-      line-height: 32px
+      @include md-size
 
     &__item a
       color: $primary
@@ -33,12 +34,22 @@
     display: flex
 
     &__item
+      display: flex
+      align-items: center
       @include primary-font
-      font-size: 18px
-      line-height: 32px
+      @include md-size
       color: $primary
       margin-left: 35px
       cursor: pointer
+
+      &:hover,&:active,&:focus
+        color: $link-color
+
+        & svg path
+          fill: $link-color
+
+    &__phone svg
+      margin-right: 7px
 
     &__burger
       display: none
@@ -50,15 +61,13 @@
 
       &__item
         margin-right: 24px
-        font-size: 14px
-        line-height: 24px
+        @include sm-size
 
     &__contacts
 
       &__item
         margin-left: 24px
-        font-size: 14px
-        line-height: 24px
+        @include sm-size
 
       &__item svg
         width: 21px
@@ -107,6 +116,7 @@
       display: none
 
     &__contacts
+      align-items: center
 
       &__burger
         display: block
@@ -127,3 +137,12 @@
 
       &__phone, &__whatsapp
         display: none
+
+@media screen and ( max-width: 480px )
+  .header
+    width: 100vw
+
+    &__contacts
+
+      &__item
+        margin-left: 18px

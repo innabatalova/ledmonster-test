@@ -30,6 +30,10 @@ input {
   outline: none;
 }
 
+button, label {
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
 }
@@ -51,6 +55,18 @@ ul {
 
 .series-name {
   text-transform: uppercase;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: .25rem;
 }
 
 .primary-button {
@@ -193,12 +209,12 @@ ul {
 }
 
 .header__nav__item {
+  display: flex;
+  align-items: center;
   margin-right: 32px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 32px;
   font-size: 18px;
   line-height: 32px;
 }
@@ -216,6 +232,8 @@ ul {
 }
 
 .header__contacts__item {
+  display: flex;
+  align-items: center;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
@@ -224,6 +242,18 @@ ul {
   color: #333333;
   margin-left: 35px;
   cursor: pointer;
+}
+
+.header__contacts__item:hover, .header__contacts__item:active, .header__contacts__item:focus {
+  color: #00CCCC;
+}
+
+.header__contacts__item:hover svg path, .header__contacts__item:active svg path, .header__contacts__item:focus svg path {
+  fill: #00CCCC;
+}
+
+.header__contacts__phone svg {
+  margin-right: 7px;
 }
 
 .header__contacts__burger {
@@ -287,6 +317,9 @@ ul {
   .header__nav {
     display: none;
   }
+  .header__contacts {
+    align-items: center;
+  }
   .header__contacts__burger {
     display: block;
   }
@@ -307,16 +340,31 @@ ul {
   }
 }
 
-.presentation-banner {
+@media screen and (max-width: 480px) {
+  .header {
+    width: 100vw;
+  }
+  .header__contacts__item {
+    margin-left: 18px;
+  }
+}
+
+.presentation {
+  position: relative;
+}
+
+.presentation__banner {
   background: url(../images/presentation-banner.png);
   background-repeat: no-repeat;
   background-size: contain;
   height: 50vw;
+  background-position-y: 100px;
+  margin-bottom: 80px;
 }
 
 .presentation__card {
   flex-direction: row;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   background-color: #ffffff;
 }
 
@@ -342,8 +390,6 @@ ul {
   font-family: 'Lato 400';
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 32px;
   font-size: 18px;
   line-height: 32px;
   color: #666666;
@@ -375,6 +421,10 @@ ul {
 }
 
 @media screen and (max-width: 1440px) {
+  .presentation__banner {
+    background-position-y: 70px;
+    margin-bottom: 64px;
+  }
   .presentation__card__info {
     padding-left: 65px;
     padding-right: 65px;
@@ -399,6 +449,12 @@ ul {
 }
 
 @media screen and (max-width: 1024px) {
+  .presentation__banner {
+    margin-bottom: 48px;
+  }
+  .presentation__card {
+    margin-bottom: 35px;
+  }
   .presentation__card__info {
     padding-left: 48px;
     padding-right: 48px;
@@ -436,6 +492,11 @@ ul {
 }
 
 @media screen and (max-width: 576px) {
+  .presentation__banner {
+    height: 60vw;
+    background-position-y: auto;
+    margin-bottom: 24px;
+  }
   .presentation__card__info {
     padding-left: 16px;
     padding-right: 16px;
@@ -448,12 +509,6 @@ ul {
   }
 }
 
-@media screen and (max-width: 420px) {
-  .presentation__card__img {
-    min-height: 300px;
-  }
-}
-
 .popular__wrapper {
   display: flex;
   justify-content: space-between;
@@ -461,7 +516,7 @@ ul {
 }
 
 .popular__title {
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .popular__card {
@@ -488,8 +543,6 @@ ul {
   font-family: 'Lato 400';
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 32px;
   font-size: 18px;
   line-height: 32px;
   color: #666666;
@@ -579,7 +632,7 @@ ul {
 }
 
 .project__title {
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .project__card {
@@ -606,8 +659,6 @@ ul {
   font-family: 'Lato 400';
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 32px;
   font-size: 18px;
   line-height: 32px;
   color: #666666;
@@ -709,8 +760,6 @@ ul {
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
-  font-size: 18px;
-  line-height: 32px;
   color: #666666;
   margin-bottom: 16px;
 }
@@ -731,8 +780,6 @@ ul {
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
-  font-size: 18px;
-  line-height: 32px;
   color: #666666;
   margin-bottom: 24px;
 }
@@ -747,6 +794,9 @@ ul {
 }
 
 .work__card__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   max-width: 250px;
 }
 
@@ -849,8 +899,6 @@ ul {
     padding-right: 24px;
   }
   .work__card__title {
-    font-size: 18px;
-    line-height: 32px;
     margin-bottom: 8px;
   }
 }
@@ -922,8 +970,6 @@ ul {
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
-  font-size: 18px;
-  line-height: 32px;
   color: #666666;
 }
 
@@ -931,8 +977,6 @@ ul {
   font-family: 'Lato 400';
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 32px;
   font-size: 18px;
   line-height: 32px;
   color: #555555;
@@ -1050,8 +1094,6 @@ ul {
   font-family: 'Lato 400';
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 32px;
   font-size: 18px;
   line-height: 32px;
   margin-bottom: 32px;
@@ -1196,8 +1238,6 @@ ul {
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
-  font-size: 18px;
-  line-height: 32px;
   color: #ffffff;
   margin-bottom: 32px;
 }
@@ -1223,8 +1263,6 @@ ul {
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
-  font-size: 18px;
-  line-height: 32px;
   background-color: inherit;
   color: #ffffff;
   border: 1px solid #ffffff;
@@ -1237,26 +1275,27 @@ ul {
 }
 
 .interaction-selection__field__name, .interaction-selection__field__phone {
-  padding-top: 15px;
+  padding-top: 20px;
 }
 
 .interaction-selection__namelabel {
   position: absolute;
   left: 16px;
-  top: 5px;
+  top: 10px;
   color: #ffffff;
 }
 
 .interaction-selection__phonelabel {
   position: absolute;
-  top: 5px;
+  top: 10px;
   right: 140px;
   color: #ffffff;
 }
 
 .interaction-selection__filelabel {
-  text-align: center;
-  padding-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 48%;
   font-family: 'Lato 600';
   font-style: normal;
@@ -1266,6 +1305,10 @@ ul {
   color: #ffffff;
   border: 1px solid #ffffff;
   border-radius: 8px;
+}
+
+.interaction-selection__filelabel svg {
+  margin-left: 7px;
 }
 
 .interaction-selection__file {
@@ -1290,6 +1333,9 @@ ul {
 }
 
 .interaction-selection__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 48%;
   height: 50px;
   font-family: 'Lato 600';
@@ -1303,6 +1349,10 @@ ul {
   color: #ffffff;
 }
 
+.interaction-selection__button svg {
+  margin-left: 7px;
+}
+
 @media screen and (max-width: 1835px) {
   .interaction-selection__field {
     max-width: 280px;
@@ -1311,7 +1361,6 @@ ul {
   .interaction-selection__filelabel {
     height: 75px;
     width: 280px;
-    padding-top: 20px;
   }
   .interaction-selection__phonelabel {
     right: 0;
@@ -1361,7 +1410,6 @@ ul {
   .interaction-selection__filelabel {
     height: 55px;
     width: 260px;
-    padding-top: 15px;
     font-size: 14px;
     line-height: 24px;
   }
@@ -1411,7 +1459,6 @@ ul {
   }
   .interaction-selection__filelabel {
     height: 40px;
-    padding-top: 5px;
   }
   .interaction-selection__button {
     height: 40px;
@@ -1458,7 +1505,6 @@ ul {
     color: #999999;
   }
   .interaction-selection__filelabel {
-    padding-top: 10px;
     color: #333333;
     border-color: #DBDBDB;
   }
@@ -1545,8 +1591,6 @@ ul {
   font-family: 'Lato 400';
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 32px;
   font-size: 18px;
   line-height: 32px;
   margin-bottom: 32px;
@@ -1691,8 +1735,6 @@ ul {
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
-  font-size: 18px;
-  line-height: 32px;
   color: #ffffff;
   margin-bottom: 32px;
 }
@@ -1718,8 +1760,6 @@ ul {
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
-  font-size: 18px;
-  line-height: 32px;
   background-color: inherit;
   color: #ffffff;
   border: 1px solid #ffffff;
@@ -1732,24 +1772,27 @@ ul {
 }
 
 .interaction-catalog__field__name, .interaction-catalog__field__phone {
-  padding-top: 15px;
+  padding-top: 20px;
 }
 
 .interaction-catalog__namelabel {
   position: absolute;
   left: 16px;
-  top: 5px;
+  top: 10px;
   color: #ffffff;
 }
 
 .interaction-catalog__phonelabel {
   position: absolute;
   left: 16px;
-  top: 5px;
+  top: 10px;
   color: #ffffff;
 }
 
 .interaction-catalog__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 320px;
   height: 75px;
   font-family: 'Lato 600';
@@ -1761,6 +1804,10 @@ ul {
   border-radius: 8px;
   background-color: inherit;
   color: #ffffff;
+}
+
+.interaction-catalog__button svg {
+  margin-left: 7px;
 }
 
 @media screen and (max-width: 1440px) {
@@ -1976,8 +2023,6 @@ ul {
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
-  font-size: 18px;
-  line-height: 32px;
   color: #333333;
   cursor: pointer;
 }
@@ -1997,6 +2042,8 @@ ul {
 }
 
 .footer__social__item {
+  display: flex;
+  align-items: center;
   margin-right: 32px;
   font-family: 'Montserrat';
   font-style: normal;
@@ -2012,12 +2059,18 @@ ul {
   color: #00CCCC;
 }
 
+.footer__social__item:hover svg path, .footer__social__item:active svg path, .footer__social__item:focus svg path {
+  fill: #00CCCC;
+}
+
+.footer__social__item svg {
+  margin-right: 7px;
+}
+
 .footer__copyright {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 32px;
   font-size: 18px;
   line-height: 32px;
   color: #999999;
@@ -2046,16 +2099,19 @@ ul {
     flex-direction: column;
   }
   .footer__social__wrapper {
+    flex-wrap: wrap;
     margin-bottom: 16px;
   }
 }
 
 @media screen and (max-width: 890px) {
-  .footer__social__wrapper {
-    flex-direction: column;
-  }
   .footer__social__item {
     margin-bottom: 16px;
+    margin-right: 16px;
+  }
+  .footer__social__item svg {
+    width: 18px;
+    height: 18px;
   }
 }
 
