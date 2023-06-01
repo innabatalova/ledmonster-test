@@ -1,19 +1,17 @@
 @font-face {
-  font-family: 'Lato 400';
+  font-family: "Lato 400";
   src: url("../fonts/Lato-Regular.eot");
   src: url("../fonts/Lato-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'Lato 600';
+  font-family: "Lato 600";
   src: url("../fonts/Lato-Semibold.eot");
   src: url("../fonts/Lato-Semibold.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
-
 * {
   box-sizing: border-box;
 }
@@ -21,7 +19,7 @@
 body {
   background-color: #E5E5E5;
   min-width: 320px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
 }
 
@@ -66,11 +64,11 @@ ul {
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: .25rem;
+  border-radius: 0.25rem;
 }
 
 .primary-button {
-  font-family: 'Lato 600';
+  font-family: "Lato 600";
   font-style: normal;
   font-weight: 600;
   color: #333333;
@@ -82,13 +80,12 @@ ul {
   border: 2px solid #666666;
   border-radius: 8px;
 }
-
 .primary-button:hover, .primary-button:active, .primary-button:focus {
   border: 2px solid #00CCCC;
 }
 
 .primary-title {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 40px;
@@ -98,7 +95,7 @@ ul {
 
 .all-link {
   position: relative;
-  font-family: 'Lato 600';
+  font-family: "Lato 600";
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -106,7 +103,6 @@ ul {
   color: #333333;
   right: 20px;
 }
-
 .all-link:after {
   content: "";
   position: absolute;
@@ -116,11 +112,9 @@ ul {
   width: 11px;
   height: 16px;
 }
-
 .all-link:hover, .all-link:active, .all-link:focus {
   color: #00CCCC;
 }
-
 .all-link:hover:after, .all-link:active:after, .all-link:focus:after {
   background: url(../images/all-link-arrow-link.svg);
 }
@@ -157,7 +151,6 @@ ul {
     top: 4px;
   }
 }
-
 @media screen and (max-width: 768px) {
   .wrapper {
     margin-bottom: 48px;
@@ -170,7 +163,6 @@ ul {
     line-height: 40px;
   }
 }
-
 @media screen and (max-width: 576px) {
   .wrapper {
     margin-bottom: 24px;
@@ -184,57 +176,51 @@ ul {
     margin-bottom: 8px;
   }
 }
-
 .header {
   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 100px;
   width: 100%;
   background: #F9F8F9;
   z-index: 5;
 }
-
 .header__wrapper {
   display: flex;
   justify-content: space-between;
   padding-top: 32px;
   padding-bottom: 32px;
 }
-
 .header__logo {
   cursor: pointer;
 }
-
 .header__nav {
   display: flex;
 }
-
 .header__nav__item {
   display: flex;
   align-items: center;
   margin-right: 32px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
 }
-
 .header__nav__item a {
   color: #333333;
 }
-
 .header__nav__item a:hover, .header__nav__item a:active, .header__nav__item a:focus {
   color: #00CCCC;
 }
-
 .header__contacts {
   display: flex;
 }
-
 .header__contacts__item {
   display: flex;
   align-items: center;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -243,19 +229,15 @@ ul {
   margin-left: 35px;
   cursor: pointer;
 }
-
 .header__contacts__item:hover, .header__contacts__item:active, .header__contacts__item:focus {
   color: #00CCCC;
 }
-
 .header__contacts__item:hover svg path, .header__contacts__item:active svg path, .header__contacts__item:focus svg path {
   fill: #00CCCC;
 }
-
 .header__contacts__phone svg {
   margin-right: 7px;
 }
-
 .header__contacts__burger {
   display: none;
 }
@@ -276,7 +258,6 @@ ul {
     height: 21px;
   }
 }
-
 @media screen and (max-width: 1440px) {
   .header {
     height: 70px;
@@ -290,7 +271,6 @@ ul {
     height: 24px;
   }
 }
-
 @media screen and (max-width: 1300px) {
   .header__logo {
     background: url(../images/header-logo-small.svg);
@@ -304,7 +284,6 @@ ul {
     margin-right: 15px;
   }
 }
-
 @media screen and (max-width: 1015px) {
   .header__logo {
     background: none;
@@ -324,7 +303,6 @@ ul {
     display: block;
   }
 }
-
 @media screen and (max-width: 665px) {
   .header__logo img {
     width: 150px;
@@ -339,7 +317,6 @@ ul {
     display: none;
   }
 }
-
 @media screen and (max-width: 480px) {
   .header {
     width: 100vw;
@@ -348,26 +325,23 @@ ul {
     margin-left: 18px;
   }
 }
-
 .presentation {
   position: relative;
 }
-
 .presentation__banner {
+  background-position-y: 60px;
   background: url(../images/presentation-banner.png);
   background-repeat: no-repeat;
   background-size: contain;
   height: 50vw;
-  background-position-y: 100px;
+  background-position-y: 85px;
   margin-bottom: 80px;
 }
-
 .presentation__card {
   flex-direction: row;
   margin-bottom: 80px;
   background-color: #ffffff;
 }
-
 .presentation__card__info {
   display: flex;
   flex-direction: column;
@@ -376,18 +350,16 @@ ul {
   padding-left: 80px;
   padding-right: 80px;
 }
-
 .presentation__card__title {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 40px;
   line-height: 56px;
   margin-bottom: 32px;
 }
-
 .presentation__card__text {
-  font-family: 'Lato 400';
+  font-family: "Lato 400";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -395,23 +367,18 @@ ul {
   color: #666666;
   margin-bottom: 32px;
 }
-
 .presentation__card__text br {
   margin-bottom: 24px;
 }
-
 .presentation__card__img1 {
   background: url(../images/presentation-img/presentation-card-1.jpg);
 }
-
 .presentation__card__img2 {
   background: url(../images/presentation-img/presentation-card-2.jpg);
 }
-
 .presentation__card__img3 {
   background: url(../images/presentation-img/presentation-card-3.jpg);
 }
-
 .presentation__card__img {
   width: 50%;
   min-height: 763px;
@@ -422,7 +389,7 @@ ul {
 
 @media screen and (max-width: 1440px) {
   .presentation__banner {
-    background-position-y: 70px;
+    background-position-y: 60px;
     margin-bottom: 64px;
   }
   .presentation__card__info {
@@ -447,7 +414,6 @@ ul {
     background-position: 50%;
   }
 }
-
 @media screen and (max-width: 1024px) {
   .presentation__banner {
     margin-bottom: 48px;
@@ -471,7 +437,6 @@ ul {
     min-height: 525px;
   }
 }
-
 @media screen and (max-width: 768px) {
   .presentation__card {
     flex-direction: column-reverse !important;
@@ -490,7 +455,6 @@ ul {
     width: 100%;
   }
 }
-
 @media screen and (max-width: 576px) {
   .presentation__banner {
     height: 60vw;
@@ -508,29 +472,24 @@ ul {
     max-width: 100%;
   }
 }
-
 .popular__wrapper {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
 .popular__title {
   margin: 0;
 }
-
 .popular__card {
   width: 49%;
   margin-top: 40px;
   cursor: pointer;
 }
-
 .popular__card__info {
   padding: 24px;
 }
-
 .popular__card__title {
-  font-family: 'Lato 600';
+  font-family: "Lato 600";
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -538,9 +497,8 @@ ul {
   color: #333333;
   margin-bottom: 8px;
 }
-
 .popular__card__text {
-  font-family: 'Lato 400';
+  font-family: "Lato 400";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -548,23 +506,18 @@ ul {
   color: #666666;
   margin-bottom: 8px;
 }
-
 .popular__card__img1 {
   background: url(../images/popular-img/popular-card-1.png);
 }
-
 .popular__card__img2 {
   background: url(../images/popular-img/popular-card-2.png);
 }
-
 .popular__card__img3 {
   background: url(../images/popular-img/popular-card-3.png);
 }
-
 .popular__card__img4 {
   background: url(../images/popular-img/popular-card-4.png);
 }
-
 .popular__card__img {
   min-height: 520px;
   background-repeat: no-repeat;
@@ -593,7 +546,6 @@ ul {
     background-size: cover;
   }
 }
-
 @media screen and (max-width: 1024px) {
   .popular__card {
     margin-top: 24px;
@@ -602,13 +554,11 @@ ul {
     min-height: 285px;
   }
 }
-
 @media screen and (max-width: 768px) {
   .popular__card__img {
     min-height: 210px;
   }
 }
-
 @media screen and (max-width: 576px) {
   .popular__card {
     width: 100%;
@@ -618,35 +568,29 @@ ul {
     min-height: 240px;
   }
 }
-
 @media screen and (max-width: 420px) {
   .popular__card__img {
     min-height: 170px;
   }
 }
-
 .project__wrapper {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
 .project__title {
   margin: 0;
 }
-
 .project__card {
   width: 49%;
   margin-top: 40px;
   cursor: pointer;
 }
-
 .project__card__info {
   padding: 24px;
 }
-
 .project__card__title {
-  font-family: 'Lato 600';
+  font-family: "Lato 600";
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -654,9 +598,8 @@ ul {
   color: #333333;
   margin-bottom: 8px;
 }
-
 .project__card__text {
-  font-family: 'Lato 400';
+  font-family: "Lato 400";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -664,23 +607,18 @@ ul {
   color: #666666;
   margin-bottom: 0;
 }
-
 .project__card__img1 {
   background: url(../images/project-img/project-card-1.jpg);
 }
-
 .project__card__img2 {
   background: url(../images/project-img/project-card-2.jpg);
 }
-
 .project__card__img3 {
   background: url(../images/project-img/project-card-3.jpg);
 }
-
 .project__card__img4 {
   background: url(../images/project-img/project-card-4.jpg);
 }
-
 .project__card__img {
   min-height: 520px;
   background-repeat: no-repeat;
@@ -706,7 +644,6 @@ ul {
     background-size: cover;
   }
 }
-
 @media screen and (max-width: 1024px) {
   .project__card {
     margin-top: 24px;
@@ -715,13 +652,11 @@ ul {
     min-height: 285px;
   }
 }
-
 @media screen and (max-width: 768px) {
   .project__card__img {
     min-height: 210px;
   }
 }
-
 @media screen and (max-width: 576px) {
   .project__card {
     width: 100%;
@@ -731,19 +666,16 @@ ul {
     min-height: 240px;
   }
 }
-
 @media screen and (max-width: 420px) {
   .project__card__img {
     min-height: 170px;
   }
 }
-
 .work__card {
   flex-direction: row;
   margin-top: 40px;
   height: 448px;
 }
-
 .work__card__info {
   display: flex;
   flex-direction: column;
@@ -753,9 +685,8 @@ ul {
   padding-right: 80px;
   background-color: #ffffff;
 }
-
 .work__card__step {
-  font-family: 'Lato 400';
+  font-family: "Lato 400";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -763,9 +694,8 @@ ul {
   color: #666666;
   margin-bottom: 16px;
 }
-
 .work__card__title {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -773,9 +703,8 @@ ul {
   margin-bottom: 24px;
   color: #333333;
 }
-
 .work__card__text {
-  font-family: 'Lato 400';
+  font-family: "Lato 400";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -783,56 +712,44 @@ ul {
   color: #666666;
   margin-bottom: 24px;
 }
-
 .work__card__text_garanty {
   display: flex;
   flex-direction: column;
 }
-
 .work__card__text br {
   margin-bottom: 24px;
 }
-
 .work__card__button {
   display: flex;
   align-items: center;
   justify-content: center;
   max-width: 250px;
 }
-
 .work__card__button svg {
   margin-left: 5px;
   margin-bottom: 2px;
 }
-
 .work__card__img1 {
   background: url(../images/work-img/work-step-1.jpg);
 }
-
 .work__card__img2 {
   background: url(../images/work-img/work-step-2.jpg);
 }
-
 .work__card__img3 {
   background: url(../images/work-img/work-step-3.jpg);
 }
-
 .work__card__img4 {
   background: url(../images/work-img/work-step-4.jpg);
 }
-
 .work__card__img5 {
   background: url(../images/work-img/work-step-5.jpg);
 }
-
 .work__card__img6 {
   background: url(../images/work-img/work-step-6.jpg);
 }
-
 .work__card__img7 {
   background: url(../images/work-img/work-step-7.jpg);
 }
-
 .work__card__img {
   width: 50%;
   background-repeat: no-repeat;
@@ -877,7 +794,6 @@ ul {
     background-position-x: 50%;
   }
 }
-
 @media screen and (max-width: 1024px) {
   .work__card {
     height: 245px;
@@ -892,7 +808,6 @@ ul {
     display: none;
   }
 }
-
 @media screen and (max-width: 768px) {
   .work__card__info {
     padding-left: 24px;
@@ -902,7 +817,6 @@ ul {
     margin-bottom: 8px;
   }
 }
-
 @media screen and (max-width: 576px) {
   .work__card {
     margin-top: 16px;
@@ -917,17 +831,14 @@ ul {
     max-width: 100%;
   }
 }
-
 .feedback__title {
   margin-bottom: 0;
 }
-
 .feedback__wrapper {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
 .feedback__card {
   padding: 32px;
   width: 49%;
@@ -936,26 +847,22 @@ ul {
   background: #ffffff;
   border: 1px solid #DBDBDB;
 }
-
 .feedback__card__wrapper {
   display: flex;
   margin-bottom: 32px;
 }
-
 .feedback__card__bio {
   display: flex;
   flex-direction: column;
   margin-left: 24px;
 }
-
 .feedback__card__avatar img {
   width: 92px;
   height: 92px;
   border-radius: 50%;
 }
-
 .feedback__card__name {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -963,18 +870,16 @@ ul {
   color: #333333;
   margin-bottom: 4px;
 }
-
 .feedback__card__title {
-  font-family: 'Lato 400';
+  font-family: "Lato 400";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
   color: #666666;
 }
-
 .feedback__card__text {
-  font-family: 'Lato 400';
+  font-family: "Lato 400";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -982,11 +887,9 @@ ul {
   color: #555555;
   margin-bottom: 24px;
 }
-
 .feedback__card__link {
   right: 0;
 }
-
 .feedback__card__link:after {
   left: 170px;
 }
@@ -1029,7 +932,6 @@ ul {
     left: 140px;
   }
 }
-
 @media screen and (max-width: 1024px) {
   .feedback__card {
     padding: 16px;
@@ -1039,7 +941,6 @@ ul {
     margin-bottom: 16px;
   }
 }
-
 @media screen and (max-width: 768px) {
   .feedback__card {
     max-height: max-content;
@@ -1051,7 +952,6 @@ ul {
     display: none;
   }
 }
-
 @media screen and (max-width: 695px) {
   .feedback__card {
     width: 100%;
@@ -1059,17 +959,14 @@ ul {
     max-height: max-content;
   }
 }
-
 .interaction {
   margin-top: 80px;
 }
-
 .interaction-contract {
   flex-direction: row;
   height: 765px;
   margin-bottom: 80px;
 }
-
 .interaction-contract__info {
   display: flex;
   flex-direction: column;
@@ -1079,9 +976,8 @@ ul {
   padding-right: 80px;
   background-color: #ffffff;
 }
-
 .interaction-contract__title {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 40px;
@@ -1089,9 +985,8 @@ ul {
   margin-bottom: 32px;
   color: #222222;
 }
-
 .interaction-contract__text {
-  font-family: 'Lato 400';
+  font-family: "Lato 400";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1099,11 +994,9 @@ ul {
   margin-bottom: 32px;
   color: #666666;
 }
-
 .interaction-contract__button {
   max-width: 160px;
 }
-
 .interaction-contract__img {
   background: url(../images/interaction-img/interaction-contract-card.jpg);
   width: 50%;
@@ -1138,7 +1031,6 @@ ul {
     max-width: 140px;
   }
 }
-
 @media screen and (max-width: 1024px) {
   .interaction {
     margin-top: 48px;
@@ -1156,7 +1048,6 @@ ul {
     line-height: 40px;
   }
 }
-
 @media screen and (max-width: 845px) {
   .interaction-contract {
     height: max-content;
@@ -1179,7 +1070,6 @@ ul {
     background-color: inherit;
   }
 }
-
 @media screen and (max-width: 576px) {
   .interaction {
     margin-top: 24px;
@@ -1203,7 +1093,6 @@ ul {
     min-height: 245px;
   }
 }
-
 .interaction-selection {
   height: 765px;
   background: url(../images/interaction-img/interaction-selection-card.jpg);
@@ -1211,7 +1100,6 @@ ul {
   background-size: cover;
   margin-bottom: 80px;
 }
-
 .interaction-selection__info {
   display: flex;
   flex-direction: column;
@@ -1221,9 +1109,8 @@ ul {
   padding-left: 80px;
   padding-right: 80px;
 }
-
 .interaction-selection__title {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 40px;
@@ -1231,9 +1118,8 @@ ul {
   color: #ffffff;
   margin-bottom: 32px;
 }
-
 .interaction-selection__text {
-  font-family: 'Lato 400';
+  font-family: "Lato 400";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1241,24 +1127,21 @@ ul {
   color: #ffffff;
   margin-bottom: 32px;
 }
-
 .interaction-selection__form {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
 .interaction-selection__wrapname, .interaction-selection__wrapphone {
   position: relative;
 }
-
 .interaction-selection__field {
   padding-left: 16px;
   margin-bottom: 24px;
   height: 75px;
   max-width: 230px;
-  font-family: 'Lato 400';
+  font-family: "Lato 400";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1268,36 +1151,31 @@ ul {
   border: 1px solid #ffffff;
   border-radius: 8px;
 }
-
 .interaction-selection__field::placeholder {
   color: #ffffff;
   opacity: 1;
 }
-
 .interaction-selection__field__name, .interaction-selection__field__phone {
   padding-top: 20px;
 }
-
 .interaction-selection__namelabel {
   position: absolute;
   left: 16px;
   top: 10px;
   color: #ffffff;
 }
-
 .interaction-selection__phonelabel {
   position: absolute;
   top: 10px;
   right: 140px;
   color: #ffffff;
 }
-
 .interaction-selection__filelabel {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 48%;
-  font-family: 'Lato 600';
+  font-family: "Lato 600";
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -1306,11 +1184,9 @@ ul {
   border: 1px solid #ffffff;
   border-radius: 8px;
 }
-
 .interaction-selection__filelabel svg {
   margin-left: 7px;
 }
-
 .interaction-selection__file {
   position: absolute;
   height: 50px;
@@ -1318,7 +1194,7 @@ ul {
   bottom: -75px;
   padding-top: 8px;
   padding-left: 15px;
-  font-family: 'Lato 600';
+  font-family: "Lato 600";
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -1327,18 +1203,16 @@ ul {
   border: 1px solid #FFFFFF;
   border-radius: 8px;
 }
-
 .interaction-selection__file::file-selector-button {
   display: none;
 }
-
 .interaction-selection__button {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 48%;
   height: 50px;
-  font-family: 'Lato 600';
+  font-family: "Lato 600";
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -1348,7 +1222,6 @@ ul {
   background-color: inherit;
   color: #ffffff;
 }
-
 .interaction-selection__button svg {
   margin-left: 7px;
 }
@@ -1370,7 +1243,6 @@ ul {
     width: 280px;
   }
 }
-
 @media screen and (max-width: 1550px) {
   .interaction-selection {
     height: 575px;
@@ -1427,7 +1299,6 @@ ul {
     height: 24px;
   }
 }
-
 @media screen and (max-width: 1400px) {
   .interaction-selection__info {
     width: 100%;
@@ -1444,7 +1315,6 @@ ul {
     width: 48%;
   }
 }
-
 @media screen and (max-width: 1024px) {
   .interaction-selection {
     height: 415px;
@@ -1464,13 +1334,11 @@ ul {
     height: 40px;
   }
 }
-
 @media screen and (max-width: 945px) {
   .interaction-selection__field {
     width: 100%;
   }
 }
-
 @media screen and (max-width: 810px) {
   .interaction-selection {
     height: 340px;
@@ -1523,7 +1391,6 @@ ul {
     fill: #999999;
   }
 }
-
 @media screen and (max-width: 725px) {
   .interaction-selection {
     height: max-content;
@@ -1543,7 +1410,6 @@ ul {
     margin-bottom: 16px;
   }
 }
-
 @media screen and (max-width: 576px) {
   .interaction-selection__title {
     font-size: 18px;
@@ -1556,17 +1422,14 @@ ul {
     width: 100%;
   }
 }
-
 .interaction {
   margin-top: 80px;
 }
-
 .interaction-solutions {
   flex-direction: row;
   height: 765px;
   margin-bottom: 80px;
 }
-
 .interaction-solutions__info {
   display: flex;
   flex-direction: column;
@@ -1576,9 +1439,8 @@ ul {
   padding-right: 80px;
   background-color: #ffffff;
 }
-
 .interaction-solutions__title {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 40px;
@@ -1586,9 +1448,8 @@ ul {
   margin-bottom: 32px;
   color: #222222;
 }
-
 .interaction-solutions__text {
-  font-family: 'Lato 400';
+  font-family: "Lato 400";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1596,11 +1457,9 @@ ul {
   margin-bottom: 32px;
   color: #666666;
 }
-
 .interaction-solutions__button {
   max-width: 160px;
 }
-
 .interaction-solutions__img {
   background: url(../images/interaction-img/interaction-solutions-card.jpg);
   width: 50%;
@@ -1635,7 +1494,6 @@ ul {
     max-width: 140px;
   }
 }
-
 @media screen and (max-width: 1024px) {
   .interaction {
     margin-top: 48px;
@@ -1653,7 +1511,6 @@ ul {
     line-height: 40px;
   }
 }
-
 @media screen and (max-width: 845px) {
   .interaction-solutions {
     height: max-content;
@@ -1676,7 +1533,6 @@ ul {
     background-color: inherit;
   }
 }
-
 @media screen and (max-width: 576px) {
   .interaction {
     margin-top: 24px;
@@ -1700,7 +1556,6 @@ ul {
     min-height: 245px;
   }
 }
-
 .interaction-catalog {
   height: 765px;
   background: url(../images/interaction-img/interaction-catalog-card.jpg);
@@ -1708,7 +1563,6 @@ ul {
   background-size: cover;
   margin-bottom: 80px;
 }
-
 .interaction-catalog__info {
   display: flex;
   flex-direction: column;
@@ -1718,9 +1572,8 @@ ul {
   padding-left: 80px;
   padding-right: 80px;
 }
-
 .interaction-catalog__title {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 40px;
@@ -1728,9 +1581,8 @@ ul {
   color: #ffffff;
   margin-bottom: 24px;
 }
-
 .interaction-catalog__text {
-  font-family: 'Lato 400';
+  font-family: "Lato 400";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1738,24 +1590,21 @@ ul {
   color: #ffffff;
   margin-bottom: 32px;
 }
-
 .interaction-catalog__form {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
 .interaction-catalog__namewrap, .interaction-catalog__phonewrap {
   position: relative;
 }
-
 .interaction-catalog__field {
   padding-left: 16px;
   margin-bottom: 24px;
   height: 75px;
   width: 320px;
-  font-family: 'Lato 400';
+  font-family: "Lato 400";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1765,37 +1614,32 @@ ul {
   border: 1px solid #ffffff;
   border-radius: 8px;
 }
-
 .interaction-catalog__field::placeholder {
   color: #ffffff;
   opacity: 1;
 }
-
 .interaction-catalog__field__name, .interaction-catalog__field__phone {
   padding-top: 20px;
 }
-
 .interaction-catalog__namelabel {
   position: absolute;
   left: 16px;
   top: 10px;
   color: #ffffff;
 }
-
 .interaction-catalog__phonelabel {
   position: absolute;
   left: 16px;
   top: 10px;
   color: #ffffff;
 }
-
 .interaction-catalog__button {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 320px;
   height: 75px;
-  font-family: 'Lato 600';
+  font-family: "Lato 600";
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -1805,7 +1649,6 @@ ul {
   background-color: inherit;
   color: #ffffff;
 }
-
 .interaction-catalog__button svg {
   margin-left: 7px;
 }
@@ -1851,7 +1694,6 @@ ul {
     height: 24px;
   }
 }
-
 @media screen and (max-width: 1024px) {
   .interaction-catalog__info {
     width: 100%;
@@ -1862,7 +1704,6 @@ ul {
     width: 420px;
   }
 }
-
 @media screen and (max-width: 768px) {
   .interaction-catalog {
     height: 340px;
@@ -1906,7 +1747,6 @@ ul {
     fill: #999999;
   }
 }
-
 @media screen and (max-width: 715px) {
   .interaction-catalog {
     height: max-content;
@@ -1924,24 +1764,20 @@ ul {
     width: 100%;
   }
 }
-
 .publication__wrapper {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
 .publication__card {
   width: 32%;
   margin-top: 40px;
   cursor: pointer;
 }
-
 .publication__card__img {
   min-height: 425px;
   background-color: #EDEDED;
 }
-
 .publication__card__info {
   display: flex;
   align-items: center;
@@ -1949,9 +1785,8 @@ ul {
   padding: 24px;
   padding-right: 15px;
 }
-
 .publication__card__text {
-  font-family: 'Lato 600';
+  font-family: "Lato 600";
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -1979,7 +1814,6 @@ ul {
     line-height: 32px;
   }
 }
-
 @media screen and (max-width: 1024px) {
   .publication__card {
     width: 48%;
@@ -1989,20 +1823,17 @@ ul {
     min-height: 280px;
   }
 }
-
 @media screen and (max-width: 768px) {
   .publication__card__img {
     min-height: 205px;
   }
 }
-
 @media screen and (max-width: 576px) {
   .publication__card {
     width: 100%;
     margin-top: 16px;
   }
 }
-
 .footer {
   padding-bottom: 40px;
   background: url(../images/footer-logo.svg);
@@ -2010,15 +1841,13 @@ ul {
   background-position-x: 100%;
   background-position-y: 100%;
 }
-
 .footer__nav {
   padding-top: 40px;
   border-top: 1px solid #DBDBDB;
 }
-
 .footer__nav__item {
   margin-right: 32px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -2026,26 +1855,22 @@ ul {
   color: #333333;
   cursor: pointer;
 }
-
 .footer__nav__item:hover, .footer__nav__item:active, .footer__nav__item:focus {
   color: #000000;
 }
-
 .footer__social {
   display: flex;
   justify-content: space-between;
   padding-top: 40px;
 }
-
 .footer__social__wrapper {
   display: flex;
 }
-
 .footer__social__item {
   display: flex;
   align-items: center;
   margin-right: 32px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-weight: 500;
@@ -2054,21 +1879,17 @@ ul {
   color: #999999;
   cursor: pointer;
 }
-
 .footer__social__item:hover, .footer__social__item:active, .footer__social__item:focus {
   color: #00CCCC;
 }
-
 .footer__social__item:hover svg path, .footer__social__item:active svg path, .footer__social__item:focus svg path {
   fill: #00CCCC;
 }
-
 .footer__social__item svg {
   margin-right: 7px;
 }
-
 .footer__copyright {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -2086,7 +1907,6 @@ ul {
     line-height: 24px;
   }
 }
-
 @media screen and (max-width: 1024px) {
   .footer__nav {
     margin-bottom: 16px;
@@ -2103,7 +1923,6 @@ ul {
     margin-bottom: 16px;
   }
 }
-
 @media screen and (max-width: 890px) {
   .footer__social__item {
     margin-bottom: 16px;
@@ -2114,10 +1933,8 @@ ul {
     height: 18px;
   }
 }
-
 @media screen and (max-width: 567px) {
   .footer__nav__item, .footer__social__item {
     margin-right: 16px;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
